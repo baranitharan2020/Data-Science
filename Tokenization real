@@ -1,0 +1,9 @@
+import spacy
+
+from spacy.lang.en import English
+
+nlp=English()
+
+doc=nlp("My Name is Billa")
+
+print([token.text for token in doc])
